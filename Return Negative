@@ -1,0 +1,23 @@
+In this simple assignment you are given a number and have to make it negative. But maybe the number is already negative?
+
+My Solution:
+
+public class Kata {
+
+  public static int makeNegative(final int x) {
+      return (x < 0) ? x : -x; 
+  }
+  
+}
+
+Best solutions (to study):
+
+import static java.lang.Math.abs;
+
+public class Kata {
+
+  public static int makeNegative(final int x) {
+    return -abs(x);
+  }
+  
+}
