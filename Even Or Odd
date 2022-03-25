@@ -1,0 +1,37 @@
+Create a function that takes an integer as an argument and returns "Even" for even numbers or "Odd" for odd numbers.
+My Solution:
+
+public class EvenOrOdd {
+    public static String even_or_odd(int number) {
+        String evenOrOdd = (number%2==0) ? "Even" : "Odd";
+        return evenOrOdd;
+    }
+}
+
+
+
+Best Alternate Solutions (to study) 
+
+public class EvenOrOdd {
+    public static String even_or_odd(int number) {
+        return (number%2 == 0) ? "Even" : "Odd";
+    }
+}
+
+
+
+public class EvenOrOdd {
+  @Deprecated // Violating the code conventions
+  public static String even_or_odd(int number) {
+    return evenOrOdd(number);
+  }
+  
+  public static String evenOrOdd(int number) {
+    return even(number) ? "Even" : "Odd";
+  }
+  
+  static boolean even(int number) {
+    return number % 2 == 0;
+  }
+}
+
