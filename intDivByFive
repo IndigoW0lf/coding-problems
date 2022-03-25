@@ -1,0 +1,16 @@
+Create a function that returns true if an integer is evenly divisible by 5, and false otherwise.
+
+My answer: (Didn't need ternary since it's a boolean, whoops!)
+public class Challenge {
+	public static boolean divisibleByFive(int num) {
+		return num % 5 == 0 ? true : false;
+	}
+}
+
+
+Best Answer:
+public class Challenge {
+  public static boolean divisibleByFive(int num) {
+    return num % 5 == 0;
+  }
+}
