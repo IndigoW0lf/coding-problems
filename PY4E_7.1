@@ -1,0 +1,12 @@
+Write some code that asks for a file from the user, reads the file and returns the file in uppercase. 
+
+
+fname = input('Enter a file path:')
+try:
+    fh = open(fname)
+    for line in fh:
+        lines = line.rstrip()
+        print(lines.upper())
+except:
+    print('File cannot be opened')
+    quit()
