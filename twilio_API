@@ -1,0 +1,17 @@
+from twilio.rest import Client
+
+client = Client(
+    "####(SID)", "####(TOKEN)"
+)
+
+for msg in client.messages.list():
+    print(f"Deleting {msg.body}")
+    msg.delete()
+
+msg = client.messages.create(
+  to="+19199999999",
+  from_="+19899999999",
+  body="Hello from Python",
+)
+
+print(f"Created a new message: {msg.sid}")
